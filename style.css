@@ -1,0 +1,64 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  overflow: hidden;
+  font-family: sans-serif;
+  font-size: 16px;
+}
+h1,
+textarea,
+button {
+  margin-bottom: 25px;
+}
+section {
+  width: 60%;
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+section h1 {
+  font-size: 35px;
+}
+section textarea {
+  resize: none;
+  width: 60%;
+  height: 140px;
+  padding: 15px;
+  outline: none;
+  border: 1px solid #656665;
+  border-radius: 5px;
+  font-family: sans-serif;
+  transition: border 0.3s ease;
+}
+section textarea:focus {
+  border-width: 2px;
+}
+section textarea::placeholder {
+  font-family: sans-serif;
+}
+section button {
+  cursor: pointer;
+  border: none;
+  padding: 10px 25px;
+  font-family: sans-serif;
+  outline: none;
+  color: white;
+  font-weight: bold;
+  border-radius: 3px;
+  background-color: rgb(22, 19, 19);
+}
+section button:hover {
+  background-color: rgb(37, 31, 31);
+}
+section button:active {
+  background-color: rgb(61, 50, 50);
+}
